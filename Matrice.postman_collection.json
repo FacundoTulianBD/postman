@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "b4fae132-8724-44aa-91b2-b00dd83f8d88",
+		"name": "Matrice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21025176"
+	},
+	"item": [
+		{
+			"name": "Acaraweb",
+			"item": [
+				{
+					"name": "Prices",
+					"item": [
+						{
+							"name": "Price",
+							"item": [
+								{
+									"name": "show",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url_website}}/api/v1/prices/1",
+											"host": [
+												"{{base_url_website}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"prices",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url_website}}/api/v1/prices/1",
+											"host": [
+												"{{base_url_website}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"prices",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "destroy",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url_website}}/api/v1/prices/1",
+											"host": [
+												"{{base_url_website}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"prices",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"perPage\":3,\r\n    \"filter\":\"bmw\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url_website}}/api/v1/prices",
+									"host": [
+										"{{base_url_website}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"prices"
+									],
+									"query": [
+										{
+											"key": "perPage",
+											"value": "10",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "importPrices",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url_website}}/api/v1/prices/import",
+									"host": [
+										"{{base_url_website}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"prices",
+										"import"
+									],
+									"query": [
+										{
+											"key": "file",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "type",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Upload",
+					"item": [
+						{
+							"name": "priceIndex",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"description": "Maximo 4 MB",
+											"type": "file",
+											"src": "/D:/Descargas HD/20353511565_011_00001_00000001.pdf"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_website}}/api/v1/upload/price-index",
+									"host": [
+										"{{base_url_website}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"upload",
+										"price-index"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "FileManager",
+					"item": [
+						{
+							"name": "processFile",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"description": ".tar.gz o .xls",
+											"type": "file",
+											"src": "/D:/Descargas HD/SUGIT_rendiciones_05062024114916/00000001_20240502_4859919_1.xls"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_dashboard}}/api/v1/file-manager/process-file",
+									"host": [
+										"{{base_url_dashboard}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"file-manager",
+										"process-file"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
