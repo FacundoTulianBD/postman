@@ -27,9 +27,9 @@
 											}
 										],
 										"url": {
-											"raw": "{{base_url_website}}/api/v1/prices/1",
+											"raw": "{{base_url_acaraweb}}/api/v1/prices/1",
 											"host": [
-												"{{base_url_website}}"
+												"{{base_url_acaraweb}}"
 											],
 											"path": [
 												"api",
@@ -53,9 +53,9 @@
 											}
 										],
 										"url": {
-											"raw": "{{base_url_website}}/api/v1/prices/1",
+											"raw": "{{base_url_acaraweb}}/api/v1/prices/1",
 											"host": [
-												"{{base_url_website}}"
+												"{{base_url_acaraweb}}"
 											],
 											"path": [
 												"api",
@@ -79,9 +79,9 @@
 											}
 										],
 										"url": {
-											"raw": "{{base_url_website}}/api/v1/prices/1",
+											"raw": "{{base_url_acaraweb}}/api/v1/prices/1",
 											"host": [
-												"{{base_url_website}}"
+												"{{base_url_acaraweb}}"
 											],
 											"path": [
 												"api",
@@ -119,9 +119,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url_website}}/api/v1/prices",
+									"raw": "{{base_url_acaraweb}}/api/v1/prices",
 									"host": [
-										"{{base_url_website}}"
+										"{{base_url_acaraweb}}"
 									],
 									"path": [
 										"api",
@@ -151,9 +151,9 @@
 									}
 								],
 								"url": {
-									"raw": "{{base_url_website}}/api/v1/prices/import",
+									"raw": "{{base_url_acaraweb}}/api/v1/prices/import",
 									"host": [
-										"{{base_url_website}}"
+										"{{base_url_acaraweb}}"
 									],
 									"path": [
 										"api",
@@ -199,9 +199,9 @@
 									]
 								},
 								"url": {
-									"raw": "{{base_url_website}}/api/v1/upload/price-index",
+									"raw": "{{base_url_acaraweb}}/api/v1/upload/price-index",
 									"host": [
-										"{{base_url_website}}"
+										"{{base_url_acaraweb}}"
 									],
 									"path": [
 										"api",
