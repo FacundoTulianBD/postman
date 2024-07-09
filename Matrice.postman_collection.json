@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b4fae132-8724-44aa-91b2-b00dd83f8d88",
+		"_postman_id": "6173a86d-c8f2-41de-9dcf-9df060de08e5",
 		"name": "Matrice",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21025176"
@@ -52,6 +52,15 @@
 												"type": "text"
 											}
 										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"marca\":\"BMW2\",\r\n    \"modelo\":\"Heritage2\",\r\n    \"version\": \"R 18 First Edition Pack2\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": {
 											"raw": "{{base_url_acaraweb}}/api/v1/prices/1",
 											"host": [
@@ -150,6 +159,17 @@
 										"type": "text"
 									}
 								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"description": ".xlsx",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
 								"url": {
 									"raw": "{{base_url_acaraweb}}/api/v1/prices/import",
 									"host": [
@@ -192,7 +212,7 @@
 									"formdata": [
 										{
 											"key": "file",
-											"description": "Maximo 4 MB",
+											"description": "PDF maximo 4 MB",
 											"type": "file",
 											"src": "/D:/Descargas HD/20353511565_011_00001_00000001.pdf"
 										}
